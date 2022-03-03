@@ -3,8 +3,9 @@ package com.example.poc.stream;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import static java.util.Arrays.asList;
 import java.util.List;
+
+import static java.util.Arrays.asList;
 
 @Data
 @AllArgsConstructor

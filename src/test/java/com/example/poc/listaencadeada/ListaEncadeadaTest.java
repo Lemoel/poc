@@ -1,11 +1,10 @@
-package com.example.poc;
+package com.example.poc.listaencadeada;
 
-import com.example.poc.listaencadeada.ListaEncadeada;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PocApplicationTests {
+class ListaEncadeadaTest {
 
 	@Test
 	void contextLoads() {}

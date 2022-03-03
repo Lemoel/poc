@@ -1,4 +1,4 @@
-package com.example.poc.stream.test;
+package com.example.poc.stream;
 
 import com.example.poc.stream.Person;
 import org.junit.jupiter.api.Test;
