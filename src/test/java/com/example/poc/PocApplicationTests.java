@@ -19,7 +19,4 @@ class PocApplicationTests {
 		System.out.println(listaEncadeada.getTamanho());
 	}
 
-
-
-
 }
