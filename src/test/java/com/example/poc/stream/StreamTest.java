@@ -40,7 +40,7 @@ public class StreamTest {
     }
 
     @Test
-    public void stream() {
+    public void comStream() {
 
         List<Person> people = Person.bancoDePessoas();
 
