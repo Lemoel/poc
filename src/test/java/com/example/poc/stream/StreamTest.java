@@ -1,13 +1,9 @@
 package com.example.poc.stream;
 
-import com.example.poc.stream.Person;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @SpringBootTest
@@ -67,7 +63,7 @@ public class StreamTest {
                 .sorted(Comparator.reverseOrder())
                 .collect(Collectors.toList());
 
-        var ordenadoPorNome  = people
+        var ordenadoPorNome = people
                 .stream()
                 .sorted(Comparator.comparing(Person::getNome))
                 .collect(Collectors.toList());
@@ -81,6 +77,17 @@ public class StreamTest {
                 .stream()
                 .sorted(Comparator.comparing(Person::getSalario))
                 .collect(Collectors.toList());
+
+    }
+
+    @Test
+    public void skip() {
+
+        List<Integer> lista = Arrays.asList(1, 5, 8, 9, 1, 4, 7, 6, 6, 9, 9);
+
+        lista.stream()
+                .skip(2)
+                .forEach(e -> System.out.println(e));
 
     }
 
